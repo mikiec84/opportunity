@@ -3977,11 +3977,12 @@ nav {
   border: solid 2px #C8002C; }
 
 #playbook-nav {
-  position: fixed;
   text-align: right;
-  margin-top: 50vh;
-  margin-top: calc(50vh - 269px); }
+  top: calc(60vh - 269px);
+  position: fixed;
+  left: calc(100vw - 280px); }
   #playbook-nav li {
+    min-width: 200px;
     font-size: 15px;
     list-style: none;
     display: block;
