@@ -4382,3 +4382,10 @@ footer {
 .filters-div .active.showAll {
   color: white;
   background-color: #C8002C; }
+
+#helpUs p:hover {
+  opacity: .8;
+  cursor: pointer; }
+
+#helpUs p {
+  font-size: 15px; }

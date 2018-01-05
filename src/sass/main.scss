@@ -878,3 +878,10 @@ a:focus {
 		background-color: $red;
 	}
 }
+#helpUs p:hover{
+	opacity: .8;
+	cursor: pointer;
+}
+#helpUs p{
+	font-size: 15px;
+}
