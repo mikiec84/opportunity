@@ -311,7 +311,7 @@
     "Owner": "Cisco",
     "Category": "employment",
     "Short-Message": "Uses American Community Survey data from the U.S. Census Bureau to drive awareness of Census Bureau data for mobile millennials and application developers so they can solve social problems using open data available for their communities and cities.",
-    "Image-File": "Cisco.png",
+    "Image-File": "cisco.png",
     "Gallery-Link": "https://opendata.testing.devnetcloud.com/#/home",
     "ClearDiv": ""
   },
@@ -320,7 +320,7 @@
     "Owner": "Excella",
     "Category": "employment",
     "Short-Message": "Excella Consulting's tool, Myspot, uses data sets from the DC Department of Human Services to help youth experiencing homelessness find and access services in the DC area.",
-    "Image-File": "Excella.png",
+    "Image-File": "excella.png",
     "Gallery-Link": "https://www.findmyspot.org",
     "ClearDiv": "yes"
   },
