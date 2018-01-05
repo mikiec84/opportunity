@@ -252,6 +252,9 @@ nav{
 }
 
 #in-the-media{
+	a{
+		display: inline-block;
+	}
 	.usa-width-one-third{
 		margin-top: 31px;
 		border: solid 1px $gray;
@@ -365,11 +368,12 @@ nav{
 	}
 }
 #playbook-nav{
-	position: fixed;
 	text-align: right;
-	margin-top: 50vh;
-	margin-top: calc(50vh - 269px);
+	top: calc(60vh - 269px);
+	position: fixed;
+	left: calc(100vw - 280px);;
 	li{
+		min-width: 200px;
 		font-size: 15px;
 		list-style: none;
 		display: block;
@@ -873,4 +877,11 @@ a:focus {
 		color: white;
 		background-color: $red;
 	}
+}
+#helpUs p:hover{
+	opacity: .8;
+	cursor: pointer;
+}
+#helpUs p{
+	font-size: 15px;
 }
