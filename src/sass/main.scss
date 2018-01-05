@@ -252,6 +252,9 @@ nav{
 }
 
 #in-the-media{
+	a{
+		display: inline-block;
+	}
 	.usa-width-one-third{
 		margin-top: 31px;
 		border: solid 1px $gray;
