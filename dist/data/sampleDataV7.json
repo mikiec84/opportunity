@@ -348,7 +348,7 @@
     "Category": "employment",
     "Short-Message":"CarePartners Plus's Get Vets Help tool uses Census and HUD datasets and enables veterans to communicate their needs to their care team in real-time, identifying high-risk veterans for suicide, homelessness and substance use for faster follow-up, increased transparency and accountability.",
     "Image-File": "CarePartners.png",
-    "Gallery-Link": "hwww.carepartnersplus.com",
+    "Gallery-Link": "www.carepartnersplus.com",
     "ClearDiv": "yes"
   },
   {
@@ -366,7 +366,7 @@
     "Category": "employment",
     "Short-Message": "An iOS application to support the logistical planning, coordination, execution, and data collection effort undertaken by Census Bureau employees conducting the homeless count.",
     "Image-File": "IBM.png",
-    "Gallery-Link": "https://jobpostings.ushahidi.io/",
+    "Gallery-Link": "",
     "ClearDiv": "yes"
   }
 ] }
