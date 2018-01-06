@@ -3725,20 +3725,20 @@ button {
 .unfilled-button-blue {
   color: #004469; }
 
-.gray-section {
+.blue-section {
   background-color: #0078AC;
   color: white; }
-  .gray-section p {
+  .blue-section p {
     color: white; }
 
-.white-section, .gray-section {
+.white-section, .blue-section {
   padding: 270px 0px; }
-  .white-section h2, .gray-section h2 {
+  .white-section h2, .blue-section h2 {
     font-size: 25px; }
-  .white-section h3, .gray-section h3 {
+  .white-section h3, .blue-section h3 {
     text-transform: uppercase;
     font-family: "Source Sans Pro"; }
-  .white-section p, .gray-section p {
+  .white-section p, .blue-section p {
     font-size: 18px; }
 
 nav {
