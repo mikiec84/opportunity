@@ -371,7 +371,7 @@ nav{
 	text-align: right;
 	top: calc(60vh - 269px);
 	position: fixed;
-	left: calc(100vw - 280px);;
+	left: calc(100vw - 280px);
 	li{
 		min-width: 200px;
 		font-size: 15px;
@@ -848,6 +848,7 @@ a:focus {
 #scroll-to-top{
 	position: fixed;
 	text-align: center;
+	left: calc(100vw - 150px);
 }
 #scroll-to-top:hover{
 	opacity: .6;
