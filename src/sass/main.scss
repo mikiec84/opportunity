@@ -47,14 +47,14 @@ button{
  .unfilled-button-blue{
   	color: $dark-blue;
   }
-  .blue-section{
+  .gray-section{
   	background-color: $light-blue;
   	color: white;
   	p{
   		color: white;
   	}
 }
- .white-section, .blue-section{
+ .white-section, .gray-section{
   	padding: 270px 0px;
  	h2{
  		font-size: 25px;
@@ -649,22 +649,10 @@ nav{
 	}
 }
 
-.blue{
-	background-color: $dark-blue;
-	color: white;
-	p{
-		color: white;
-	}
-	h1,h2,h3{
-		color: white;
-	}
-	.checklist{
-  		li{
-  			list-style-image: url("../img/checkbox-white.png");
-  		}
-  	}
+.gray{
+	background-color: #F6F6F6;
 }
-.white{
+.white, .gray{
 	.checklist{
   		li{
   			list-style-image: url("../img/checkbox-black.png");
