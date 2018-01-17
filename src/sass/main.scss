@@ -194,7 +194,7 @@ nav{
 			padding: 21px 86px;
 			h3{
 				color: $dark-blue;
-				font-size: 15px;
+				font-size: 18px;
 			}
 			img{
 				width: 324px;
@@ -527,7 +527,6 @@ nav{
 			border-radius: 7px;
 			float: left;
 			background-color: white;
-			border: 3px solid $light-blue;
 			box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
 			margin-top: 23px;
 			z-index: 2;
@@ -539,7 +538,7 @@ nav{
 			float: left;
 			text-align: right;
 			text-transform: uppercase;
-			font-size: 15px;
+			font-size: 18px;
 			font-weight: 600;
 			padding-right: 16px;
 			min-width: 92px;
@@ -548,7 +547,7 @@ nav{
 			padding-top: 20px;
 			max-width: 359px;
 			display: block;
-			font-size: 15px;
+			font-size: 18px;
 			line-height: 19px;
 			border-left: solid 3px white;
 			padding-left: 18px;
@@ -572,11 +571,17 @@ nav{
 			}
 		}
 		#week9-10{
+			p{
+				padding-right: 11px;
+			}
 			.description{
 				margin-bottom: -30px;
 			}
 		}
 		#week11-12{
+			p{
+				padding-right: 3px;
+			}
 			.description{
 				border-left: none;
 			}
@@ -873,4 +878,7 @@ a:focus {
 }
 #helpUs p{
 	font-size: 15px;
+}
+#what-is p{
+	font-size: 20px;
 }
