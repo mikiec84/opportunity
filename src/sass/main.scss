@@ -282,6 +282,12 @@ nav{
 	.usa-width-one-third:hover{
 		@include hoverable;
 	}
+	#in-the-media-links{
+		display: block;
+	}
+	#in-the-media-links-mobile{
+		display: none;
+	}
 }
 
 #projects-head{
@@ -918,7 +924,16 @@ a:focus {
 		display: block!important;
 	}
 }
-
-	#in-the-media-links{
-		display: none!important;
+@media (max-width: 661px) {
+	footer{
+		padding-top: 50px;
 	}
+	footer #images{
+		float: none;
+		padding-left: 20px;
+	}
+	footer img{
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
+}

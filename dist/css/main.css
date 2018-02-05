@@ -3906,6 +3906,12 @@ nav {
   cursor: pointer;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
+#in-the-media #in-the-media-links {
+  display: block; }
+
+#in-the-media #in-the-media-links-mobile {
+  display: none; }
+
 #projects-head {
   padding-top: 86px; }
   #projects-head h1, #projects-head p {
@@ -4416,5 +4422,12 @@ footer {
   #in-the-media-links-mobile {
     display: block !important; } }
 
-#in-the-media-links {
-  display: none !important; }
+@media (max-width: 661px) {
+  footer {
+    padding-top: 50px; }
+  footer #images {
+    float: none;
+    padding-left: 20px; }
+  footer img {
+    padding-left: 20px;
+    padding-bottom: 20px; } }
