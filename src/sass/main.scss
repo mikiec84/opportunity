@@ -69,6 +69,8 @@ button{
  }
 
 nav{
+	top: 0;
+	position: fixed;
 	background-color: $dark-blue;
 	width: 100%;
 	height: 70px;
@@ -129,7 +131,7 @@ nav{
 #splash{
 	width: 100vw;
 	text-align: center;
-	height: calc(100vh - 70px);
+	height: 100vh;
 	min-height: 400px;
 	background-image: url(../img/hero.png);
   	-webkit-background-size: cover;
@@ -141,7 +143,7 @@ nav{
   		text-align: center;
   		font-size: 35px;
   		margin-bottom: 27px;
-  		margin-top: calc(50vh - 70px - 115px);
+  		margin-top: calc(50vh - 115px);
   	}
   	p{
   		color: #F6F6F6;
@@ -181,7 +183,7 @@ nav{
  @media (max-width: 520px) {
   	#splash{
   		h1{
-  			margin-top: 100px;
+  			margin-top: 170px;
   		}
   	}
   }
@@ -291,7 +293,7 @@ nav{
 }
 
 #projects-head{
-	padding-top: 86px;
+	padding-top: 156px;
 	h1, p{
 		color: black;
 	}
@@ -422,7 +424,7 @@ nav{
 		font-size: 25px;
 		margin-bottom: 9px;
 		color: black;
-		margin-top: 129px;
+		margin-top: 199px;
 		font-weight: 600;
 	}
 	h2{
@@ -939,14 +941,18 @@ a:focus {
 }
 
 #mobile-playbook-nav{
+	width: 100%;
+	position: fixed;
+	top: 70px;
 	display: none;
 	color: white;
 	background-color: #C8002C;
 	font-size: 13px;
-	padding-bottom: 34px;
+	margin-top: 0px;
 }
 #mobile-playbook-nav ul{
 	padding-top: 14px;
+	padding-bottom: 34px;
 }
 #mobile-playbook-nav li{
 	color: white;
@@ -959,16 +965,24 @@ a:focus {
 }
 #playbook-mobile-nav-top{
 	margin: auto;
-	text-align: center;
 	border-bottom: solid .5px white;
+	width: 100%;
+	text-align: center;
 }
 #playbook-mobile-nav-top p{
-	width: 214px;
+	text-align: center;
 	color: white;
 	font-size: 15px;
 	height: 49px;
-	display: table-cell;
-    vertical-align: middle;
+	display: inline-block;
+    margin: auto;
+    padding-top: 12px;
+}
+#playbook-mobile-nav-top:hover{
+	cursor: pointer;
+}
+#playbook-mobile-nav-top p:hover{
+	opacity: .8;
 }
 @media (max-width: 700px) {
 	#scroll-to-top{
@@ -981,6 +995,9 @@ a:focus {
 	}
 	#mobile-playbook-nav{
 		display: block;
+	}
+	#mobile-playbook-nav ul{
+		display: none;
 	}
 }
 @media (max-width: 400px) {
@@ -1003,3 +1020,4 @@ a:focus {
 		padding: 30px 0px;
 	}
 }
+
