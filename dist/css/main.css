@@ -4431,3 +4431,7 @@ footer {
   footer img {
     padding-left: 20px;
     padding-bottom: 20px; } }
+
+@media (max-width: 661px) {
+  #scroll-to-top {
+    display: none; } }
