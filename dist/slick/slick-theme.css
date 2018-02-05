@@ -149,10 +149,10 @@
 }
 .slick-dots li button
 {
+    margin-top: -100px;
+
     font-size: 0;
     line-height: 0;
-
-    display: block;
 
     width: 20px;
     height: 20px;
@@ -166,9 +166,12 @@
     background: transparent;
 }
 .slick-dots li button:hover,
-.slick-dots li button:focus
+.slick-dots li button:focus,
+.slick-dots li button:active,
+.slick-dots li button:visited
 {
     outline: none;
+    background-color: none!important;
 }
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
@@ -201,4 +204,12 @@
 {
     opacity: .75;
     color: black;
+}
+.slick-dots button, .slick-dots button:active{
+    min-height: 0px;
+    min-width: 0px;
+}
+.slick-dots button:hover, .slick-dots button:active, .slick-dots button:focus, .slick-dots button:visited, .slick-dots [type=button]:active, .slick-dots [type=button]:hover, [type=button]:focus{
+    background-color: none!important;
+    z-index: 0;
 }
