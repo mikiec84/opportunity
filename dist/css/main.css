@@ -3875,6 +3875,10 @@ nav {
       width: auto;
       margin-right: 6px;
       margin-left: -35px; }
+  #in-action .usa-width-one-third #action-links {
+    display: block; }
+  #in-action .usa-width-one-third #action-links-mobile {
+    display: none; }
 
 #in-action .usa-width-one-third:hover {
   cursor: pointer;
@@ -4389,3 +4393,28 @@ footer {
 
 #what-is p {
   font-size: 20px; }
+
+.slick-slider {
+  display: none !important; }
+
+@media (max-width: 375px) {
+  .white-section, .blue-section {
+    padding: 100px 0px; }
+  #what-is img {
+    margin-top: 40px;
+    margin-bottom: -30px; }
+  #what-is .call-to-action #department-of-commerce {
+    border-right: none; }
+  .slick-slider {
+    display: block !important; }
+  #action-links-mobile {
+    display: block; }
+  #action-links {
+    display: none; }
+  #in-the-media-links {
+    display: none !important; }
+  #in-the-media-links-mobile {
+    display: block !important; } }
+
+#in-the-media-links {
+  display: none !important; }
