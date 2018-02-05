@@ -681,7 +681,7 @@ nav{
 	h1{
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 400;
-		font-size: 18px;
+		font-size: 18px!important;
 		margin-top: 8px;
 		margin-bottom: 6px;
 	}
@@ -937,8 +937,33 @@ a:focus {
 		padding-bottom: 20px;
 	}
 }
-@media (max-width: 661px) {
+@media (max-width: 700px) {
 	#scroll-to-top{
 		display: none;
+	}
+}
+@media (max-width: 900px) {
+	#playbook-nav{
+		display: none;
+	}
+}
+@media (max-width: 400px) {
+	.playbook-section h1{
+		font-size: 25px;
+	}
+	#intro #see-the-steps{
+		margin-top: 20px;
+	}
+	#timeline{
+		margin-left: -40px;
+	}
+	#timeline .description{
+		width: 250px;
+	}
+	#form-a-team h3:first-child{
+		padding-top: 50px;
+	}
+	#roles img{
+		padding: 30px 0px;
 	}
 }
