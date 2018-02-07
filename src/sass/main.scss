@@ -64,11 +64,14 @@ button{
  		font-family: "Source Sans Pro";
  	}
  	p{
- 		font-size: 18px;
+ 		font-size: 20px;
  	}
  }
 
 nav{
+	z-index: 100;
+	top: 0;
+	position: fixed;
 	background-color: $dark-blue;
 	width: 100%;
 	height: 70px;
@@ -129,7 +132,7 @@ nav{
 #splash{
 	width: 100vw;
 	text-align: center;
-	height: calc(90vh - 70px);
+	height: 100vh;
 	min-height: 400px;
 	background-image: url(../img/hero.png);
   	-webkit-background-size: cover;
@@ -141,7 +144,7 @@ nav{
   		text-align: center;
   		font-size: 35px;
   		margin-bottom: 27px;
-  		margin-top: calc(50vh - 70px - 115px);
+  		margin-top: calc(50vh - 115px);
   	}
   	p{
   		color: #F6F6F6;
@@ -181,7 +184,7 @@ nav{
  @media (max-width: 520px) {
   	#splash{
   		h1{
-  			margin-top: 100px;
+  			margin-top: 170px;
   		}
   	}
   }
@@ -191,10 +194,10 @@ nav{
 		text-align: center;
 		.usa-width-one-half{
 			max-width: 324px + 172px;
-			padding: 21px 86px;
+			padding: 21px 42px;
 			h3{
 				color: $dark-blue;
-				font-size: 15px;
+				font-size: 18px;
 			}
 			img{
 				width: 324px;
@@ -214,6 +217,7 @@ nav{
 
 #in-action{
 	.usa-width-one-third{
+		z-index: 1;
 		color: white;
 		margin-top: 40px;
 		border: solid 2px #F6F6F6;
@@ -222,7 +226,7 @@ nav{
 		margin-right: 13px;
 		p{
 			font-size: 15px;
-			min-height: 154px;
+			min-height: 176px;
 		}
 		img{
 			width: 283px;
@@ -244,6 +248,12 @@ nav{
 				margin-right: 6px;
 				margin-left: -35px;
 			}
+		}
+		#action-links{
+			display: block;
+		}
+		#action-links-mobile{
+			display: none;
 		}
 	}
 	.usa-width-one-third:hover{
@@ -276,10 +286,16 @@ nav{
 	.usa-width-one-third:hover{
 		@include hoverable;
 	}
+	#in-the-media-links{
+		display: block;
+	}
+	#in-the-media-links-mobile{
+		display: none;
+	}
 }
 
 #projects-head{
-	padding-top: 86px;
+	padding-top: 156px;
 	h1, p{
 		color: black;
 	}
@@ -371,7 +387,7 @@ nav{
 	text-align: right;
 	top: calc(60vh - 269px);
 	position: fixed;
-	left: calc(100vw - 280px);;
+	left: calc(100vw - 280px);
 	li{
 		min-width: 200px;
 		font-size: 15px;
@@ -410,7 +426,7 @@ nav{
 		font-size: 25px;
 		margin-bottom: 9px;
 		color: black;
-		margin-top: 129px;
+		margin-top: 199px;
 		font-weight: 600;
 	}
 	h2{
@@ -527,7 +543,6 @@ nav{
 			border-radius: 7px;
 			float: left;
 			background-color: white;
-			border: 3px solid $light-blue;
 			box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
 			margin-top: 23px;
 			z-index: 2;
@@ -539,7 +554,7 @@ nav{
 			float: left;
 			text-align: right;
 			text-transform: uppercase;
-			font-size: 15px;
+			font-size: 16px;
 			font-weight: 600;
 			padding-right: 16px;
 			min-width: 92px;
@@ -548,7 +563,7 @@ nav{
 			padding-top: 20px;
 			max-width: 359px;
 			display: block;
-			font-size: 15px;
+			font-size: 16px;
 			line-height: 19px;
 			border-left: solid 3px white;
 			padding-left: 18px;
@@ -572,11 +587,17 @@ nav{
 			}
 		}
 		#week9-10{
+			p{
+				padding-right: 11px;
+			}
 			.description{
 				margin-bottom: -30px;
 			}
 		}
 		#week11-12{
+			p{
+				padding-right: 3px;
+			}
 			.description{
 				border-left: none;
 			}
@@ -649,22 +670,10 @@ nav{
 	}
 }
 
-.blue{
-	background-color: $dark-blue;
-	color: white;
-	p{
-		color: white;
-	}
-	h1,h2,h3{
-		color: white;
-	}
-	.checklist{
-  		li{
-  			list-style-image: url("../img/checkbox-white.png");
-  		}
-  	}
+.gray{
+	background-color: #F6F6F6;
 }
-.white{
+.white, .gray{
 	.checklist{
   		li{
   			list-style-image: url("../img/checkbox-black.png");
@@ -676,7 +685,7 @@ nav{
 	h1{
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 400;
-		font-size: 18px;
+		font-size: 18px!important;
 		margin-top: 8px;
 		margin-bottom: 6px;
 	}
@@ -778,7 +787,7 @@ a:focus {
   }
 
   footer{
-	height: 358px;
+	height: 300px;
 	background-color: $dark-blue;
 	color: white;
 	padding-top: 91px;
@@ -860,6 +869,7 @@ a:focus {
 #scroll-to-top{
 	position: fixed;
 	text-align: center;
+	left: calc(100vw - 150px);
 }
 #scroll-to-top:hover{
 	opacity: .6;
@@ -885,3 +895,135 @@ a:focus {
 #helpUs p{
 	font-size: 15px;
 }
+#what-is p{
+	font-size: 20px;
+}
+.slick-slider{
+	display: none!important;
+}
+@media (max-width: 375px) {
+	.white-section, .blue-section{
+		padding: 100px 0px;
+	}
+	#what-is img{
+		margin-top: 40px;
+		margin-bottom: -30px;
+	}
+	#what-is .call-to-action #department-of-commerce{
+		border-right: none;
+	}
+	.slick-slider{
+		display: block!important;
+	}
+	#action-links-mobile{
+		display: block;
+	}
+	#action-links{
+		display: none;
+	}
+	#in-the-media-links{
+		display: none!important;
+	}
+	#in-the-media-links-mobile{
+		display: block!important;
+	}
+}
+@media (max-width: 661px) {
+	footer{
+		padding-top: 50px;
+	}
+	footer #images{
+		float: none;
+		padding-left: 20px;
+	}
+	footer img{
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+#mobile-playbook-nav{
+	width: 100%;
+	position: fixed;
+	top: 70px;
+	display: none;
+	color: white;
+	background-color: #C8002C;
+	font-size: 13px;
+	margin-top: 0px;
+}
+#mobile-playbook-nav ul{
+	padding-top: 14px;
+	padding-bottom: 34px;
+}
+#mobile-playbook-nav li{
+	color: white;
+	text-decoration: none;
+	margin-bottom: 10px;
+	list-style: none;
+}
+#mobile-playbook-nav li:hover{
+	opacity: .8;
+}
+#playbook-mobile-nav-top{
+	margin: auto;
+	border-bottom: solid .5px white;
+	width: 100%;
+	text-align: center;
+}
+#playbook-mobile-nav-top p{
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	height: 49px;
+	display: inline-block;
+    margin: auto;
+    padding-top: 12px;
+}
+#playbook-mobile-nav-top:hover{
+	cursor: pointer;
+}
+#playbook-mobile-nav-top p:hover{
+	opacity: .8;
+}
+@media (max-width: 700px) {
+	#scroll-to-top{
+		display: none;
+	}
+}
+@media (max-width: 900px) {
+	#playbook-nav{
+		display: none;
+	}
+	#mobile-playbook-nav{
+		display: block;
+	}
+	#mobile-playbook-nav ul{
+		display: none;
+	}
+}
+@media (max-width: 400px) {
+	.playbook-section h1{
+		font-size: 25px;
+	}
+	#intro #see-the-steps{
+		margin-top: 20px;
+	}
+	#timeline{
+		margin-left: -40px;
+	}
+	#timeline .description{
+		width: 250px;
+	}
+	#form-a-team h3:first-child{
+		padding-top: 50px;
+	}
+	#roles img{
+		padding: 30px 0px;
+	}
+}
+.slick-dots button:hover, .slick-dots button:active, .slick-dots button:focus, .slick-dots button:visited, .slick-dots [type=button]:active, .slick-dots [type=button]:hover, [type=button]:focus{
+    background-color: transparent!important;
+    z-index: 0;
+}
+
