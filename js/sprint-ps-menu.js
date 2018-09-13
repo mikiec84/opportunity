@@ -1,4 +1,7 @@
+//functionality for the "menu" that shows different years of problem statments
 function psToggle(problemSet) {
+
+  //grab corresponding divs of problem statements and buttons
   let problems2018 = document.getElementsByClassName('ps-2018');
   let problems2017 = document.getElementsByClassName('ps-2017');
   let problems2016 = document.getElementsByClassName('ps-2016');
@@ -7,6 +10,7 @@ function psToggle(problemSet) {
   let button2017 = document.getElementsByClassName('yr-btn')[1];
   let button2016 = document.getElementsByClassName('yr-btn')[2];
 
+  //set displays - if a button is clicked, display that year and hide other years
   if (problemSet === "2018") {
     for(var i = 0; i < problems2017.length; i++) {
       problems2017[i].style.display = "none";
