@@ -38,6 +38,8 @@
 ### Sprints:
 * New page detailing how the design sprints work and who participates in them
 * Added a number of visual assets in jpg and png form
+* Added PDFs of each agency problem statement
 
 ### Files Added:
-* sprints.html
+* sprint-ps-menu.js
+* grow-text.js
