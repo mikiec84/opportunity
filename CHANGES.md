@@ -28,18 +28,3 @@
 
 ### Files Added:
 * return-top-mobile.js
-
-## Changes made as of 9/13/2018
-
-### Home:
-* Added a section to describe the design sprints
-* Added a button that links to a new page on the design sprints
-
-### Sprints:
-* New page detailing how the design sprints work and who participates in them
-* Added a number of visual assets in jpg and png form
-* Added PDFs of each agency problem statement
-
-### Files Added:
-* sprint-ps-menu.js
-* grow-text.js

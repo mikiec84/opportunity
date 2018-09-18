@@ -4775,13 +4775,14 @@ footer {
   #join-btn-sprint-wrapper {
     padding-top: 8%;
     padding-left: 12px;
+    text-align: right;
   }
 
-  #join-btn-sprint {
+  .join-btn-sprint {
     background-color: #C8002C;
     color: white;
     border-radius: 5px;
-    border: solid #C8002C 2px;
+    border: solid 2px #C8002C;
     -o-transition:.2s;
     -ms-transition:.2s;
     -moz-transition:.2s;
@@ -4789,7 +4790,50 @@ footer {
     transition:.2s;
   }
 
-  #join-btn-sprint:hover {
+  .join-btn-sprint:hover {
     background-color: white;
     color: #004469;
+    border: solid 2px #C8002C;
+  }
+
+
+  @media screen and (max-width: 850px) {
+    #join-btn-sprint-wrapper {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .timeline-wrapper {
+      display: none;
+    }
+
+    .role-card {
+      height: 500px;
+    }
+
+    .role-card-pad {
+      margin-bottom: 20px;
+    }
+
+    .ps-image {
+      width: 65%;
+      margin-left: 18%;
+      padding-bottom: 10px;
+      float: none;
+    }
+
+    .ps-image-mid {
+      width: 50%;
+      margin-left: 25%;
+      padding-bottom: 10px;
+      float: none;
+    }
+
+    .ps-image-small {
+      width: 50%;
+      margin-left: 25%;
+      padding-bottom: 10px;
+      float: none;
+    }
   }

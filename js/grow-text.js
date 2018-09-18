@@ -1,7 +1,4 @@
-//animate the timeline pieces on hover
 function growText(block) {
-
-  //if mouse hovers on a piece, highlight that and de-highlight others
   if (block === "research") {
     let element = document.getElementById("research-text");
     element.style.webkitTransform = "scale(1.1,1.1)";
